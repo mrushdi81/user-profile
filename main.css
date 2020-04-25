@@ -21,6 +21,23 @@ body {
   border-radius: 10px;
   text-align: center;
   position: relative;
+  overflow: hidden;
+}
+
+.userDiv::before {
+  content: "";
+  height: 80px;
+  width: 103px;
+  background-color: #1fb5ad;
+  position: absolute;
+  right: -20%;
+  -webkit-transform: skew(40deg);
+  transform: skew(-51deg);
+  left: -94px;
+}
+
+.userDiv:hover {
+  border: 1px solid #1fb5ad;
 }
 
 .userDiv .mainDiv {
@@ -148,6 +165,7 @@ body {
   }
   .userDiv .mainDiv {
     display: block;
+    padding: 10px;
   }
   .userDiv .mainDiv .statics {
     width: 100%;

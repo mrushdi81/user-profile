@@ -19,13 +19,29 @@ body {
     border-radius: 10px;
     text-align: center;
     position: relative;
+    overflow: hidden;
+    &::before{
+        content: "";
+        height: 80px;
+        width: 103px;
+        background-color: #1fb5ad;
 
+        position: absolute;
+        right: -20%;
+        -webkit-transform: skew(40deg);
+        transform: skew(-51deg);
+        left: -94px;
+     }
+    &:hover {
+        border: 1px solid #1fb5ad;
+    }
     .mainDiv {
         display: flex;
         position: relative;
         overflow: hidden;
         padding: 20px;
         height: 100%;
+
         .imageDiv {
             width: 25%;
             height: 160px;
@@ -116,21 +132,19 @@ body {
     }
 }
 @media only screen and (max-width: 600px) {
-   
     .userDiv {
         width: 300px;
         height: fit-content;
-
+        
         .mainDiv {
             display: block;
+            padding: 10px;
             .statics {
-                width:100%;
+                width: 100%;
                 text-align: center;
-               
-                
-                padding  : 10px;
+
+                padding: 10px;
                 .socil {
-                     
                     text-align: center;
                     padding: 0 65px;
                 }
