@@ -1,4 +1,147 @@
-body{
-    background-color: whitesmoke;
-    height: 100%;
+body {
+  background-color: whitesmoke;
+  height: 100%;
+  font-family: 'Varela Round', sans-serif;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.userDiv {
+  width: 600px;
+  border: 1px solid #f0f0f0;
+  margin: 10% auto;
+  background-color: white;
+  height: 200px;
+  line-height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.userDiv .mainDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  height: 100%;
+}
+
+.userDiv .mainDiv .imageDiv {
+  width: 25%;
+  height: 160px;
+  padding: 25px;
+  padding-left: 3px;
+}
+
+.userDiv .mainDiv .imageDiv img {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+}
+
+.userDiv .mainDiv .userinfo {
+  width: 50%;
+  padding: 10px;
+  text-align: left;
+  border-right: 1px solid #e4e1e1;
+  padding-right: 15px;
+}
+
+.userDiv .mainDiv .userinfo .btn {
+  padding-top: 5px;
+}
+
+.userDiv .mainDiv .userinfo .btn button {
+  border: none;
+  color: white;
+  background-color: #1fb5ad;
+  padding: 6px;
+  border-radius: 5px;
+  /* min-width: 50px; */
+  width: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.userDiv .mainDiv .userinfo .loren {
+  margin: 10px 0;
+  color: #a2a0a0;
+  font-size: 13px;
+}
+
+.userDiv .mainDiv .userinfo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1fb5ad;
+}
+
+.userDiv .mainDiv .userinfo .posion {
+  font-size: 12px;
+  font-weight: normal;
+  color: #c3c3c3fa;
+  display: block;
+}
+
+.userDiv .statics {
+  width: 25%;
+  text-align: left;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.userDiv .statics .divst {
+  margin-bottom: 15px;
+}
+
+.userDiv .statics .divst h1 {
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.userDiv .statics .divst h5 {
+  color: #a2a0a0;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.userDiv .statics .socil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.userDiv .statics .socil div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.userDiv .statics .socil div i {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  text-align: center;
+  cursor: pointer;
+}
+
+.userDiv .statics .socil div i.active {
+  color: #1fb5ad;
+}
+
+@media only screen and (min-width: 768px) {
+  .mainDiv {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
