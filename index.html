@@ -58,15 +58,13 @@
      <div class="chipControl"  @mouseleave="show=false">
         <div class="chip">
             <div class="chipElement " v-for="(lst,index) in filter" :key="lst.id" v-if="lst.sl==true">
-
-
-                <label :for="'lb'+index">{{lst.name}}
-                    <button @click="unCheck(lst.id)">{{index}}</button>
-                </label>
-
+                <img :src="lst.img" alt="">
+                <label :for="'lb'+index">{{lst.name}}</label>
+                                 
+                <i class="far fa-times-circle" @click="unCheck(lst.id)"></i>
             </div>
             <div v-if="unfilter.length >= 1" class="input">
-                <input v-model="search" @input="onChange"    ref="drop" type="text" />
+                <input v-model="search" @click="onChange"    ref="drop" type="text" />
 
             </div>
 
@@ -74,7 +72,8 @@
 
         <div v-if="show" class="content">
             <div class="contentElement" v-for="(lst,index) in finallist" :key="lst.id" v-if="lst.sl==false">
-                <input @change=" unfilter.length >= 1 ?  show=true:show=false" type="checkbox" v-model="lst.sl" :id="'lb'+index">
+                <input style="display: none;" @change=" unfilter.length >= 1 ?  show=true:show=false" type="checkbox" v-model="lst.sl" :id="'lb'+index">
+               <img :src="lst.img" alt="">
                 <label :for="'lb'+index">{{lst.name}}</label>
             </div>
         </div>

@@ -202,16 +202,23 @@ body {
 #app {
   width: 600px;
   margin: 20px auto;
-  height: 300px;
+  height: 200px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: white;
 }
 
+#app h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #1fb5ad;
+  margin: 10px;
+}
+
 #app .chipControl {
   position: relative;
   width: 80%;
-  margin: 10% auto;
+  margin: 20px auto;
 }
 
 #app .chipControl .chip {
@@ -250,17 +257,49 @@ body {
 }
 
 #app .chipControl .chip .chipElement {
-  height: 80%;
-  margin: 5px;
-  background-color: yellow;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2px;
   padding: 3px;
+  border: 1px solid #1fb5ad;
+  padding: 4px;
+  position: relative;
+  border-radius: 3px;
+}
+
+#app .chipControl .chip .chipElement img {
+  width: 13px;
+  height: 13px;
+  margin-top: 0px;
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+}
+
+#app .chipControl .chip .chipElement i {
+  width: 13px;
+  height: 13px;
+  margin-top: 0px;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  top: 7px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#app .chipControl .chip .chipElement label {
+  font-size: 13px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 #app .chipControl .content {
   padding: 20px;
   position: absolute;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #fff;
   min-width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -273,6 +312,11 @@ body {
   height: 25px;
   padding-left: 10px;
   padding-top: 5px;
+}
+
+#app .chipControl .content .contentElement img {
+  width: 15px;
+  height: 15px;
 }
 
 #app .chipControl .content .contentElement:hover {
