@@ -20,6 +20,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+    // transition: all 0.3s;
     &::before{
         content: "";
         height: 80px;
@@ -33,7 +34,10 @@ body {
         left: -94px;
      }
     &:hover {
-        border: 1px solid #1fb5ad;
+        // border: 1px solid #1fb5ad;
+        box-shadow: 5px 5px 10px #0000007d;
+
+        
     }
     .mainDiv {
         display: flex;
@@ -135,7 +139,7 @@ body {
     .userDiv {
         width: 300px;
         height: fit-content;
-        
+       
         .mainDiv {
             display: block;
             padding: 10px;

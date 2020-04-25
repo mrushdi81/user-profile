@@ -37,7 +37,8 @@ body {
 }
 
 .userDiv:hover {
-  border: 1px solid #1fb5ad;
+  -webkit-box-shadow: 5px 5px 10px #0000007d;
+          box-shadow: 5px 5px 10px #0000007d;
 }
 
 .userDiv .mainDiv {
